@@ -58,3 +58,16 @@ tr {
   height: 50px;
   padding-left: 50px;
 }
+
+#margin {
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-bottom: 50px;
+}
+
+#divCards {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}

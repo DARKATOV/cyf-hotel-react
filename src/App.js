@@ -10,9 +10,9 @@ const App = () => {
   return (
     <div className="App">
       <Heading />
-      <TouristInfoCards />
       <Bookings />
       <ButtonSearch />
+      <TouristInfoCards />
     </div>
   );
 };
