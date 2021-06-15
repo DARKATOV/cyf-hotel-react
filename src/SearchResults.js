@@ -1,24 +1,26 @@
 import React, { useState } from "react";
-import ResultSearch from "./ResultSearch";
+import Row from "./Row";
 
-const SearchResults = ({ bookings }) => {
+const SearchResults = ({ results }) => {
+  console.log(results);
   return (
     <div>
       <table className="table table-striped">
         <thead className="thead-dark">
           <tr>
             <th>ID</th>
-            <th>TITLE</th>
-            <th>FIRST NAME</th>
-            <th>SURNAME</th>
-            <th>EMAIL</th>
-            <th>ROOM ID</th>
-            <th>CHECK IN DATE</th>
-            <th>CHECK OUT DATE</th>
+            <th>Title</th>
+            <th>Nights</th>
+            <th>Firt name</th>
+            <th>Surname</th>
+            <th>Email</th>
+            <th>Room ID</th>
+            <th>Check in date</th>
+            <th>Check out date</th>
           </tr>
         </thead>
-        {bookings.map(result => {
-          return <ResultRow result={result} />;
+        {results.map(result => {
+          return <Row result={result} />;
         })}
       </table>
     </div>

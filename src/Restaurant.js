@@ -9,6 +9,12 @@ const Restaurant = () => {
         <li>
           Pizzas: {pizzas} <button className="btn btn-primary">Add</button>
         </li>
+        <li>
+          Pizzas: {pizzas} <button className="btn btn-primary">Add</button>
+        </li>
+        <li>
+          Pizzas: {pizzas} <button className="btn btn-primary">Add</button>
+        </li>
       </ul>
     </div>
   );

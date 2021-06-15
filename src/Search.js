@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonSearch from "./ButtonSearch";
 
 const Search = () => {
   return (
