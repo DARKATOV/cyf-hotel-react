@@ -19,6 +19,7 @@ const App = () => {
       <Bookings />
       <ButtonSearch />
       <TouristInfoCards />
+      <Restaurant />
       <Footer dataFoot={dataFoot} />
     </div>
   );
