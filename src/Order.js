@@ -10,6 +10,7 @@ let Order = ({ orderType }) => {
     <>
       <li>
         {orderType} :{`${orders} `}
+        <br />
         <RestaurantButton orderOne={orderOne} className="align" />
       </li>
     </>
