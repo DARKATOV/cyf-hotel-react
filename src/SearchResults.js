@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Row from "./Row";
 
-const SearchResults = ({ results }) => {
-  console.log(results);
+const SearchResults = ({ bookings }) => {
+  console.log(bookings);
   return (
     <div>
       <table className="table table-striped">
@@ -19,7 +19,7 @@ const SearchResults = ({ results }) => {
             <th>Check out date</th>
           </tr>
         </thead>
-        {results.map(result => {
+        {bookings.map(result => {
           return <Row result={result} />;
         })}
       </table>
