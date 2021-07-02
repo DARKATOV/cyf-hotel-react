@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Search from "./Search.js";
 import SearchResults from "./SearchResults.js";
+import FakeBookings from "./data/fakeBookings.json";
 
 const Bookings = () => {
-  let [idProfile, setIdProfile] = useState(null);
-  let [bookings, setBookings] = useState([]);
-
+  let [bookings, setBookings] = useState(FakeBookings);
   const search = searchVal => {
     console.info("GO!, DO IT!", searchVal);
   };
